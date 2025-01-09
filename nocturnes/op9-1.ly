@@ -14,7 +14,7 @@
 staffOne = \change Staff = "Up"
 staffTwo = \change Staff = "Down"
 
-soprano = \relative bf'' {
+upOne = \relative bf'' {
   \key df \major
   \time 6/4
   \tempo "Larghetto"
@@ -57,7 +57,7 @@ soprano = \relative bf'' {
     <f f'>2. <e e'> |
     <d d'>8( <e e'> <d d'>4 <a a'> <b b'>2.) |
   \barNumberCheck #25
-    <d d'>8( <e e'> <d d'>4 <a a'>) \once \slurDashed 
+    <d d'>8( <e e'> <d d'>4 <a a'>) \once \slurDashed
   \tempo "a tempo"
       <bf bf'>2.( |
     <c c'>2. <df df'>) |
@@ -74,27 +74,27 @@ soprano = \relative bf'' {
     <ef ef'>2.( <f f'> |
     \once\stemDown <gf gf'>4 <f f'>8 <gf gf'> <af af'> <bf bf'> <bf bf'>4 \once\stemDown <ef, ef'>) <af af'> ~ |
     <af af'>4( <bf bf'>8 <af af'> <gf gf'> <f f'>) <f f'>4( <gf gf'>8 <f f'> <ef ef'> <df df'>) |
-    <ef ef'>1 ~ 
+    <ef ef'>1 ~
   \stemDown
       <ef ef'>4 \once\slurDashed <e e'>( |
     <f f'>2. <e e'>)|
   \stemNeutral
   \barNumberCheck #40
     <d d'>8( <e e'> <d d'>4 <a a'> <b b'>2.) |
-    <d d'>8( <e e'> <d d'>4 <a a'>) 
+    <d d'>8( <e e'> <d d'>4 <a a'>)
   \tempo "a tempo"
       <bf bf'>2.( |
     <c c'>2. <df df'>) |
     <ef ef'>2.( <f f'> |
     <gf gf'>4 <f f'>8 <gf gf'> <af af'> <bf bf'> <bf bf'>4 \once\stemDown <ef, ef'>) <af af'> ~ |
     <af af'>4( <bf bf'>8 <af af'> <gf gf'> <f f'>) <f f'>4( <gf gf'>8 <f f'> <ef ef'> <df df'>) |
-    <ef ef'>1 ~ 
+    <ef ef'>1 ~
   \stemDown
       <ef ef'>4 <e e'>( |
     <f f'>2. <e e'>)|
   \stemNeutral
     <d d'>8( <e e'> <d d'>4 <a a'> <b b'>2.) |
-    <d d'>8( <e e'> <d d'>4 <a a'>) 
+    <d d'>8( <e e'> <d d'>4 <a a'>)
   \tempo "a tempo"
       \once\slurDashed <bf bf'>2.( |
   \barNumberCheck #50
@@ -111,9 +111,9 @@ soprano = \relative bf'' {
     <df' f>4.( <cf ef>8 <af cf> <ef af> <cf f>2) <cf ef gf>4( |
   \voiceOne
     <bf' gf>2. <f af> ) |
-  \oneVoice 
+  \oneVoice
     \once\slurDashed <df f>4.( <cf ef>8 <af cf> <f af> <cf f>2)
-  \voiceOne 
+  \voiceOne
       <ef gf>4( |
     <gf bf>2. <f af>) |
   \oneVoice
@@ -138,7 +138,7 @@ soprano = \relative bf'' {
     \tuplet 3/2{ f( gf e } \tuplet 3/2 { f[) \ottava #1 f''( e] } \tuplet 3/2 { ef[ df c] }  \tuplet 20/6 { bf a gf f e ef df c \ottava #0 bf a gf f gf e f b, c f ef df }  |
     df2) bf4( bf') bf-.( bf-.) |
     bf2( d,4) \once \override TupletNumber.text = "(7)" \tuplet 7/6 { ef8( f ef d ef gf8. f16) } |
-    f2( e4)  
+    f2( e4)
     \once \override Script.script-priority = #-100
       f^\markup { \teeny\parenthesize\flat }\trill \grace { e16 f } g8 a bf c |
     df2 \tuplet 3/2 { bf8( gf bf,) } df2( c4) |
@@ -154,7 +154,7 @@ soprano = \relative bf'' {
     <d, f bf d>1.\arpeggio
 }
 
-alto = \relative bf'{
+upTwo = \relative bf'{
   \key df \major
   \time 6/4
   \tempo "Larghetto"
@@ -177,7 +177,7 @@ alto = \relative bf'{
   <f cf'>1 <f cf'>2 |
   s1.*2
   \barNumberCheck #56
-  cf'1. |   
+  cf'1. |
   s2. s2 cf,4 ~ |
   cf1. |
   s1.*11
@@ -192,7 +192,7 @@ alto = \relative bf'{
   s1.*4 s2. s2 gf8 f
 }
 
-bass = \relative c {
+downOne = \relative c {
   \key df \major
   \time 6/4
   \tempo "Larghetto"
@@ -217,8 +217,8 @@ bass = \relative c {
     bf,8( f' df' bf f' f,) bf,( f' ef' a,  f' f,)
     bf,8( f' df' bf f' f,) bf,( f' df' bf f' f,) |
     bf,8( f' d' bf af' f,) bf,( f' ef' bf gf' ef) |
-    c,8( g' e' cf bf' cf,) f,( cf' 
-  \clef treble 
+    c,8( g' e' cf bf' cf,) f,( cf'
+  \clef treble
       a' ef c' f,) |
   \barNumberCheck #15
   \clef bass
@@ -294,7 +294,7 @@ bass = \relative c {
     bf,8( f' df' bf f' f,) bf,( f' ef' a, f' f,) |
     bf,8( f' df' bf f' f,) bf,( f' df' bf f' f,) |
     bf,8( f' d' bf af' bf,) ef,( gf ef' bf gf' ef) |
-    c,8( g' 
+    c,8( g'
   \clef treble
       e' c bf' c,) f,( c' a' ef c' f,) |
   \clef bass
@@ -305,7 +305,7 @@ bass = \relative c {
     bf,8( f' df' bf f' f,) bf,( f' ef' a, f' f,) |
     bf,8( f' df' bf f' f,) bf,( f' ef' a, f' f,) |
     bf,8( f' df' bf f' f,) bf,( gf' a cf ef gf) |
-    a4 r r r2 
+    a4 r r r2
   \voiceTwo
       r4 |
     <bf,, bf,>2. <bf bf,>4 <bf bf,> <bf bf,>
@@ -315,12 +315,12 @@ bass = \relative c {
 \score {
   \new PianoStaff = "Grand" \with {} <<
     \new Staff = "Up" \with {} <<
-      \new Voice \soprano
-      \new Voice \alto
+      \new Voice \upOne
+      \new Voice \upTwo
     >>
     % \new Dynamics \dynamics
     \new Staff = "Down" \with { \clef bass } <<
-      \new Voice \bass
+      \new Voice \downOne
     >>
   >>
 }
