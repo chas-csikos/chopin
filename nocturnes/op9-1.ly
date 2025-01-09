@@ -8,7 +8,7 @@
   title = "Nocturne 1"
   composer = "Chopin"
   dedication = "A Madame Camilla Pleyel"
-  opus = "Op. 9-1"
+  opus = "Op. 9–1"
 }
 
 staffOne = \change Staff = "Up"

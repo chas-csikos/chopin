@@ -5,10 +5,10 @@
 \include "include/layout.ily"
 
 \header {
-    composer = "Chopin"
-    title    = "Nocturne 3"
-    piece    = "Nocturne 3"
-    opus     = "Op. 9 – 3"
+  composer = "Chopin"
+  title    = "Nocturne 3"
+  piece    = "Nocturne 3"
+  opus     = "Op. 9–3"
 }
 
 \paper{

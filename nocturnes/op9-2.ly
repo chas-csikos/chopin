@@ -7,7 +7,7 @@
 \header {
   title    = "Nocturne 2"
   composer = "Chopin"
-  opus     = "Op. 9 – 2"
+  opus     = "Op. 9–2"
 }
 
 \paper {
