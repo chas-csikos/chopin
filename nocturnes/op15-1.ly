@@ -5,7 +5,7 @@
 \include "include/layout.ily"
 
 \header {
-  title       = "Nocturne 4"
+  title       = "Trois Nocturnes"
   composer    = "Chopin"
   opus        = "Op. 15–1"
   dedication  = "A son ami Ferdinand Hiller"
@@ -27,7 +27,7 @@ global = {
   \key f \major
 }
 
-right = \relative c'' {
+upOne = \relative c'' {
   \global
   \partial 4 c4( |
   \barNumberCheck #1
@@ -162,7 +162,7 @@ right = \relative c'' {
   \bar "|."
 }
 
-leftTop = \relative c' {
+downOne = \relative c' {
   \global
   \partial 4 r4 |
   \barNumberCheck #1
@@ -290,7 +290,7 @@ leftTop = \relative c' {
   s2. |
 }
 
-leftMiddle = \relative a {
+downTwo = \relative a {
   \global
   \voiceFour
   \shiftOff
@@ -326,7 +326,7 @@ leftMiddle = \relative a {
   g8[ bf] g[ bf] s4 |
 }
 
-leftBottom = \relative f {
+downThree = \relative f {
   \global
   \partial 4 s4
   \voiceTwo
@@ -371,12 +371,12 @@ leftBottom = \relative f {
 \score {
   \new PianoStaff \with { } <<
     \new Staff = "Up" \with {} <<
-      \right
+      \upOne
     >>
     \new Staff = "Down" \with {\clef bass} <<
-      \leftTop
-      \leftMiddle
-      \leftBottom
+      \downOne
+      \downTwo
+      \downThree
     >>
   >>
   \layout{
