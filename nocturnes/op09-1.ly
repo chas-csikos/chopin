@@ -5,10 +5,16 @@
 \include "include/layout.ily"
 
 \header {
-  title = "Nocturne 1"
+  title = "Trois Nocturnes"
+  titleRunner = "Nocturne 1"
   composer = "Chopin"
   dedication = "A Madame Camilla Pleyel"
   opus = "Op. 9–1"
+}
+
+\paper {
+  min-systems-per-page = #4
+  page-count = #6
 }
 
 staffOne = \change Staff = "Up"
