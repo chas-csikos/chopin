@@ -1,3 +1,5 @@
+\version "2.24.4"
+
 \paper {
 % Paper size and margins
   #(set-paper-size "arch a")
